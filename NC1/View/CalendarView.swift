@@ -28,7 +28,6 @@ struct CalenderView: View {
                     }
                     .onEnded { gesture in
                         if gesture.translation.width < -100 {
-//                            changeMonth(by: 1)
                             month = month.changeMonth(by: 1)
                         } else if gesture.translation.width > 100 {
                             month = month.changeMonth(by: -1)
@@ -38,10 +37,6 @@ struct CalenderView: View {
             )
         }
     }
-    
-    
-    
-    
 }
 
 

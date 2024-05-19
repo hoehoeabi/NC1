@@ -13,7 +13,7 @@ struct calendarGridView: View {
     
     var body: some View {
         // MARK: - 날짜 그리드 뷰
-        let daysInMonth: Int = CalenderView.numberOfDays(in: month)
+        let daysInMonth: Int = CalenderView.numberOfDays(date: month)
         let firstWeekday: Int = CalenderView.firstWeekdayOfMonth(in: month) - 1
             
             return VStack {
