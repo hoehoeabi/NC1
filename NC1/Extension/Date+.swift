@@ -19,11 +19,20 @@ extension Date {
     
     func changeMonth(by value: Int) -> Date {
         let calendar = Calendar.current
-        _ = calendar.dateComponents([.month], from: self)
+        //_ = calendar.dateComponents([.month], from: self)
         return calendar.date(byAdding: .month, value: value, to: self) ?? .now
 //        if let newMonth = calendar.date(byAdding: .month, value: value, to: component.month) {
 //            self.month = newMonth
 //        }
     }
+//    func changeMonth(by value: Int) -> Date {
+//        let calendar = Calendar.current
+//        var components = calendar.dateComponents([.month], from: self)
+//        if let newMonth = calendar.date(byAdding: .month, value: value, to: self) {
+//            components.month = calendar.component(.month, from: newMonth)
+//            return newMonth
+//        }
+//        return Date() // 에러 처리 등에 따라 다른 값을 반환할 수도 있음
+//    }
 }
 

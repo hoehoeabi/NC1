@@ -25,7 +25,7 @@ extension CalenderView {
     }
     
     /// 해당 월에 존재하는 일자 수
-    static func numberOfDays(in date: Date) -> Int {
+    static func numberOfDays(date: Date) -> Int {
         return Calendar.current.range(of: .day, in: .month, for: date)?.count ?? 0
     }
     
